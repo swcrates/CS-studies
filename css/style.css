@@ -254,6 +254,40 @@
 				padding: 0.50em 0em;
 			}
 
+		/* bubble message */
+
+		.bubble-box {
+			position: relative;
+			background: #f6b72b;
+			border-radius: .8em;
+		}
+
+		.bubble-box:after {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 50%;
+			width: 0;
+			height: 0;
+			border: 24px solid transparent;
+			border-right-color: #f6b72b;
+			border-left: 0;
+			border-bottom: 0;
+			margin-top: -12px;
+			margin-left: -24px;
+		}
+		
+		.bubble-text {
+			padding:20px;
+			color:#fff;
+			font-size:110%;
+			font-weight:bold;
+			text-align:justify;
+		}
+
+		.underline {
+			text-decoration: underline;
+		}
 /*********************************************************************************/
 /* Header                                                                        */
 /*********************************************************************************/
